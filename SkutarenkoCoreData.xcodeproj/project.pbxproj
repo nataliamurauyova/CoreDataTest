@@ -1,0 +1,429 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EA81058A20FC817B003CCBA2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EA81058920FC817B003CCBA2 /* AppDelegate.m */; };
+		EA81058D20FC817B003CCBA2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA81058C20FC817B003CCBA2 /* ViewController.m */; };
+		EA81059020FC817B003CCBA2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA81058E20FC817B003CCBA2 /* Main.storyboard */; };
+		EA81059320FC817B003CCBA2 /* SkutarenkoCoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EA81059120FC817B003CCBA2 /* SkutarenkoCoreData.xcdatamodeld */; };
+		EA81059520FC817D003CCBA2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA81059420FC817D003CCBA2 /* Assets.xcassets */; };
+		EA81059820FC817D003CCBA2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA81059620FC817D003CCBA2 /* LaunchScreen.storyboard */; };
+		EA81059B20FC817D003CCBA2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EA81059A20FC817D003CCBA2 /* main.m */; };
+		EA8105AD20FC9B39003CCBA2 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA8105AC20FC9B39003CCBA2 /* CoreData.framework */; };
+		EA8105B820FC9E63003CCBA2 /* Student+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = EA8105B520FC9E63003CCBA2 /* Student+CoreDataClass.m */; };
+		EA8105B920FC9E63003CCBA2 /* Student+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = EA8105B720FC9E63003CCBA2 /* Student+CoreDataProperties.m */; };
+		EA8105BB20FC9ED9003CCBA2 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA8105BA20FC9ED9003CCBA2 /* CoreFoundation.framework */; };
+		EA8105BD20FC9EE3003CCBA2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA8105BC20FC9EE3003CCBA2 /* UIKit.framework */; };
+		EA8105BF20FC9EF6003CCBA2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA8105BE20FC9EF6003CCBA2 /* Foundation.framework */; };
+		EA8105C420FCC750003CCBA2 /* Car+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = EA8105C120FCC750003CCBA2 /* Car+CoreDataClass.m */; };
+		EA8105C520FCC750003CCBA2 /* Car+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = EA8105C320FCC750003CCBA2 /* Car+CoreDataProperties.m */; };
+		EA8105F920FCEFFE003CCBA2 /* Object+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = EA8105F220FCEFFE003CCBA2 /* Object+CoreDataClass.m */; };
+		EA8105FA20FCEFFE003CCBA2 /* Object+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = EA8105F420FCEFFE003CCBA2 /* Object+CoreDataProperties.m */; };
+		EA8105FB20FCEFFE003CCBA2 /* University+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = EA8105F620FCEFFE003CCBA2 /* University+CoreDataClass.m */; };
+		EA8105FC20FCEFFE003CCBA2 /* University+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = EA8105F820FCEFFE003CCBA2 /* University+CoreDataProperties.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		EA81058520FC817B003CCBA2 /* SkutarenkoCoreData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SkutarenkoCoreData.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA81058820FC817B003CCBA2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		EA81058920FC817B003CCBA2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EA81058B20FC817B003CCBA2 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		EA81058C20FC817B003CCBA2 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		EA81058F20FC817B003CCBA2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EA81059220FC817B003CCBA2 /* SkutarenkoCoreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SkutarenkoCoreData.xcdatamodel; sourceTree = "<group>"; };
+		EA81059420FC817D003CCBA2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EA81059720FC817D003CCBA2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EA81059920FC817D003CCBA2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA81059A20FC817D003CCBA2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EA8105AC20FC9B39003CCBA2 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		EA8105B420FC9E63003CCBA2 /* Student+CoreDataClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Student+CoreDataClass.h"; sourceTree = "<group>"; };
+		EA8105B520FC9E63003CCBA2 /* Student+CoreDataClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Student+CoreDataClass.m"; sourceTree = "<group>"; };
+		EA8105B620FC9E63003CCBA2 /* Student+CoreDataProperties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Student+CoreDataProperties.h"; sourceTree = "<group>"; };
+		EA8105B720FC9E63003CCBA2 /* Student+CoreDataProperties.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Student+CoreDataProperties.m"; sourceTree = "<group>"; };
+		EA8105BA20FC9ED9003CCBA2 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		EA8105BC20FC9EE3003CCBA2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		EA8105BE20FC9EF6003CCBA2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		EA8105C020FCC750003CCBA2 /* Car+CoreDataClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Car+CoreDataClass.h"; sourceTree = "<group>"; };
+		EA8105C120FCC750003CCBA2 /* Car+CoreDataClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Car+CoreDataClass.m"; sourceTree = "<group>"; };
+		EA8105C220FCC750003CCBA2 /* Car+CoreDataProperties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Car+CoreDataProperties.h"; sourceTree = "<group>"; };
+		EA8105C320FCC750003CCBA2 /* Car+CoreDataProperties.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Car+CoreDataProperties.m"; sourceTree = "<group>"; };
+		EA8105F120FCEFFE003CCBA2 /* Object+CoreDataClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Object+CoreDataClass.h"; sourceTree = "<group>"; };
+		EA8105F220FCEFFE003CCBA2 /* Object+CoreDataClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Object+CoreDataClass.m"; sourceTree = "<group>"; };
+		EA8105F320FCEFFE003CCBA2 /* Object+CoreDataProperties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Object+CoreDataProperties.h"; sourceTree = "<group>"; };
+		EA8105F420FCEFFE003CCBA2 /* Object+CoreDataProperties.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Object+CoreDataProperties.m"; sourceTree = "<group>"; };
+		EA8105F520FCEFFE003CCBA2 /* University+CoreDataClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "University+CoreDataClass.h"; sourceTree = "<group>"; };
+		EA8105F620FCEFFE003CCBA2 /* University+CoreDataClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "University+CoreDataClass.m"; sourceTree = "<group>"; };
+		EA8105F720FCEFFE003CCBA2 /* University+CoreDataProperties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "University+CoreDataProperties.h"; sourceTree = "<group>"; };
+		EA8105F820FCEFFE003CCBA2 /* University+CoreDataProperties.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "University+CoreDataProperties.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EA81058220FC817B003CCBA2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA8105BF20FC9EF6003CCBA2 /* Foundation.framework in Frameworks */,
+				EA8105BD20FC9EE3003CCBA2 /* UIKit.framework in Frameworks */,
+				EA8105BB20FC9ED9003CCBA2 /* CoreFoundation.framework in Frameworks */,
+				EA8105AD20FC9B39003CCBA2 /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EA81057C20FC817B003CCBA2 = {
+			isa = PBXGroup;
+			children = (
+				EA81058720FC817B003CCBA2 /* SkutarenkoCoreData */,
+				EA81058620FC817B003CCBA2 /* Products */,
+				EA8105AB20FC9B38003CCBA2 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		EA81058620FC817B003CCBA2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EA81058520FC817B003CCBA2 /* SkutarenkoCoreData.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EA81058720FC817B003CCBA2 /* SkutarenkoCoreData */ = {
+			isa = PBXGroup;
+			children = (
+				EA8105F120FCEFFE003CCBA2 /* Object+CoreDataClass.h */,
+				EA8105F220FCEFFE003CCBA2 /* Object+CoreDataClass.m */,
+				EA8105F320FCEFFE003CCBA2 /* Object+CoreDataProperties.h */,
+				EA8105F420FCEFFE003CCBA2 /* Object+CoreDataProperties.m */,
+				EA8105F520FCEFFE003CCBA2 /* University+CoreDataClass.h */,
+				EA8105F620FCEFFE003CCBA2 /* University+CoreDataClass.m */,
+				EA8105F720FCEFFE003CCBA2 /* University+CoreDataProperties.h */,
+				EA8105F820FCEFFE003CCBA2 /* University+CoreDataProperties.m */,
+				EA8105C020FCC750003CCBA2 /* Car+CoreDataClass.h */,
+				EA8105C120FCC750003CCBA2 /* Car+CoreDataClass.m */,
+				EA8105C220FCC750003CCBA2 /* Car+CoreDataProperties.h */,
+				EA8105C320FCC750003CCBA2 /* Car+CoreDataProperties.m */,
+				EA8105B420FC9E63003CCBA2 /* Student+CoreDataClass.h */,
+				EA8105B520FC9E63003CCBA2 /* Student+CoreDataClass.m */,
+				EA8105B620FC9E63003CCBA2 /* Student+CoreDataProperties.h */,
+				EA8105B720FC9E63003CCBA2 /* Student+CoreDataProperties.m */,
+				EA81058820FC817B003CCBA2 /* AppDelegate.h */,
+				EA81058920FC817B003CCBA2 /* AppDelegate.m */,
+				EA81058B20FC817B003CCBA2 /* ViewController.h */,
+				EA81058C20FC817B003CCBA2 /* ViewController.m */,
+				EA81058E20FC817B003CCBA2 /* Main.storyboard */,
+				EA81059420FC817D003CCBA2 /* Assets.xcassets */,
+				EA81059620FC817D003CCBA2 /* LaunchScreen.storyboard */,
+				EA81059920FC817D003CCBA2 /* Info.plist */,
+				EA81059A20FC817D003CCBA2 /* main.m */,
+				EA81059120FC817B003CCBA2 /* SkutarenkoCoreData.xcdatamodeld */,
+			);
+			path = SkutarenkoCoreData;
+			sourceTree = "<group>";
+		};
+		EA8105AB20FC9B38003CCBA2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EA8105BE20FC9EF6003CCBA2 /* Foundation.framework */,
+				EA8105BC20FC9EE3003CCBA2 /* UIKit.framework */,
+				EA8105BA20FC9ED9003CCBA2 /* CoreFoundation.framework */,
+				EA8105AC20FC9B39003CCBA2 /* CoreData.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EA81058420FC817B003CCBA2 /* SkutarenkoCoreData */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA81059E20FC817D003CCBA2 /* Build configuration list for PBXNativeTarget "SkutarenkoCoreData" */;
+			buildPhases = (
+				EA81058120FC817B003CCBA2 /* Sources */,
+				EA81058220FC817B003CCBA2 /* Frameworks */,
+				EA81058320FC817B003CCBA2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SkutarenkoCoreData;
+			productName = SkutarenkoCoreData;
+			productReference = EA81058520FC817B003CCBA2 /* SkutarenkoCoreData.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EA81057D20FC817B003CCBA2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Nataliya Murauyova";
+				TargetAttributes = {
+					EA81058420FC817B003CCBA2 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+				};
+			};
+			buildConfigurationList = EA81058020FC817B003CCBA2 /* Build configuration list for PBXProject "SkutarenkoCoreData" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EA81057C20FC817B003CCBA2;
+			productRefGroup = EA81058620FC817B003CCBA2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EA81058420FC817B003CCBA2 /* SkutarenkoCoreData */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EA81058320FC817B003CCBA2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA81059820FC817D003CCBA2 /* LaunchScreen.storyboard in Resources */,
+				EA81059520FC817D003CCBA2 /* Assets.xcassets in Resources */,
+				EA81059020FC817B003CCBA2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EA81058120FC817B003CCBA2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA8105F920FCEFFE003CCBA2 /* Object+CoreDataClass.m in Sources */,
+				EA8105C420FCC750003CCBA2 /* Car+CoreDataClass.m in Sources */,
+				EA81058D20FC817B003CCBA2 /* ViewController.m in Sources */,
+				EA8105B920FC9E63003CCBA2 /* Student+CoreDataProperties.m in Sources */,
+				EA81059320FC817B003CCBA2 /* SkutarenkoCoreData.xcdatamodeld in Sources */,
+				EA8105C520FCC750003CCBA2 /* Car+CoreDataProperties.m in Sources */,
+				EA8105FA20FCEFFE003CCBA2 /* Object+CoreDataProperties.m in Sources */,
+				EA8105FC20FCEFFE003CCBA2 /* University+CoreDataProperties.m in Sources */,
+				EA8105FB20FCEFFE003CCBA2 /* University+CoreDataClass.m in Sources */,
+				EA81059B20FC817D003CCBA2 /* main.m in Sources */,
+				EA8105B820FC9E63003CCBA2 /* Student+CoreDataClass.m in Sources */,
+				EA81058A20FC817B003CCBA2 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		EA81058E20FC817B003CCBA2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EA81058F20FC817B003CCBA2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EA81059620FC817D003CCBA2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EA81059720FC817D003CCBA2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EA81059C20FC817D003CCBA2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		EA81059D20FC817D003CCBA2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EA81059F20FC817D003CCBA2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8GV573DZ5G;
+				INFOPLIST_FILE = SkutarenkoCoreData/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Nataliya-Murauyova.SkutarenkoCoreData";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EA8105A020FC817D003CCBA2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8GV573DZ5G;
+				INFOPLIST_FILE = SkutarenkoCoreData/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Nataliya-Murauyova.SkutarenkoCoreData";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EA81058020FC817B003CCBA2 /* Build configuration list for PBXProject "SkutarenkoCoreData" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA81059C20FC817D003CCBA2 /* Debug */,
+				EA81059D20FC817D003CCBA2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EA81059E20FC817D003CCBA2 /* Build configuration list for PBXNativeTarget "SkutarenkoCoreData" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA81059F20FC817D003CCBA2 /* Debug */,
+				EA8105A020FC817D003CCBA2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		EA81059120FC817B003CCBA2 /* SkutarenkoCoreData.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				EA81059220FC817B003CCBA2 /* SkutarenkoCoreData.xcdatamodel */,
+			);
+			currentVersion = EA81059220FC817B003CCBA2 /* SkutarenkoCoreData.xcdatamodel */;
+			path = SkutarenkoCoreData.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = EA81057D20FC817B003CCBA2 /* Project object */;
+}
