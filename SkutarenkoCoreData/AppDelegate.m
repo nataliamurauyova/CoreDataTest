@@ -10,6 +10,9 @@
 #import "AppDelegate.h"
 #import "Student+CoreDataClass.h"
 #import "Student+CoreDataProperties.h"
+#import "Car+CoreDataClass.h"
+#import "University+CoreDataClass.h"
+
 
 
 
@@ -37,7 +40,7 @@ static NSString *carModelNames[] = {
 -(Student*)addRandomStudent{
     NSManagedObjectContext *context = self.persistentContainer.viewContext;
     Student *student = [NSEntityDescription insertNewObjectForEntityForName:@"Student" inManagedObjectContext:context];
-    student.score = arc4random_uniform(201)/ 200.f + 2.f;
+    student.score = arc4random_uniform(201)/ 100.f + 2.f;
     student.dateOfBirth = [NSDate dateWithTimeIntervalSince1970:60*60*24*365*arc4random_uniform(31)];
     student.firstName = firstNames[arc4random_uniform(10)];
     student.lastName = lastNames[arc4random_uniform(10)];
@@ -49,6 +52,17 @@ static NSString *carModelNames[] = {
     Car *car = [NSEntityDescription insertNewObjectForEntityForName:@"Car" inManagedObjectContext:context];
     car.model = carModelNames[arc4random_uniform(5)];
     return car;
+}
+
+-(University*) addUniversity{
+    University* univer = [NSEntityDescription insertNewObjectForEntityForName:@"University" inManagedObjectContext:self.persistentContainer.viewContext];
+    univer.name = @"BSUIR";
+    return univer;
+}
+-(Course*) addCourseWithName: (NSString*) name{
+    Course* course = [NSEntityDescription insertNewObjectForEntityForName:@"Course" inManagedObjectContext:self.persistentContainer.viewContext];
+    course.name = name;
+    return course;
 }
 
 -(NSArray*)allObjects{
@@ -67,21 +81,31 @@ static NSString *carModelNames[] = {
     return resultArray;
 }
 
-
--(void)printAllObjects{
-    NSArray *allObjects = [self allObjects];
+-(void)printArray: (NSArray*) array{
     
-    for (id object in allObjects) {
+    for (id object in array) {
         
         if([object isKindOfClass:[Car class]]){
             Car* car = (Car*)object;
             NSLog(@"CAR: %@, OWNER: %@ %@",car.model,car.owner.firstName,car.owner.lastName);
         } else if ([object isKindOfClass:[Student class]]){
             Student *student = (Student*)object;
-            NSLog(@"STUDENT: %@ %@, CAR: %@",student.firstName,student.lastName,student.car.model);
+            NSLog(@"STUDENT: %@ %@, SCORE: %1.2f, COURSES: %lu",student.firstName,student.lastName,student.score,[student.courses count]);
+        } else if ([object isKindOfClass:[University class]]){
+            University *university = (University*)object;
+            NSLog(@"UNIVERSITY: %@ STUDENTS: %lu",university.name,[university.students count]);
+        }
+        else if ([object isKindOfClass:[Course class]]){
+            Course *course = (Course*)object;
+            NSLog(@"COURSE: %@ STUDENTS: %lu",course.name,[course.students count]);
         }
         //NSLog(@"%@",object);
     }
+    NSLog(@"Count - %lu",(unsigned long)[array count]);
+}
+-(void)printAllObjects{
+    NSArray *allObjects = [self allObjects];
+    [self printArray:allObjects];
    
 }
 -(void)deleteAllObjects{
@@ -100,48 +124,71 @@ static NSString *carModelNames[] = {
     NSPersistentStoreCoordinator *coordinator = self.persistentContainer.persistentStoreCoordinator;
     NSManagedObjectContext *context = self.persistentContainer.viewContext;
     
-//    NSLog(@"%@",[model entitiesByName]);
-//    NSManagedObject *student = [NSEntityDescription insertNewObjectForEntityForName:@"Student" inManagedObjectContext:context];
-//    [student setValue:@"John" forKey:@"firstName"];
-//    [student setValue:@"Smith" forKey:@"lastName"];
-//    [student setValue:[NSDate dateWithTimeIntervalSinceReferenceDate:0] forKey:@"dateOfBirth"];
-//    [student setValue:@5 forKey:@"score"];
-//
+//    [self deleteAllObjects];
 //    NSError *error = nil;
-//    if(![context save:&error]){
+//
+//
+//    NSArray* courses = @[[self addCourseWithName:@"iOS"],
+//                         [self addCourseWithName:@"Android"],
+//                         [self addCourseWithName:@"Python"],
+//                         [self addCourseWithName:@"Java"],
+//                         [self addCourseWithName:@"PHP"]];
+//    University* university = [self addUniversity];
+//    [university addCourses:[NSSet setWithArray:courses]];
+//    for (int i = 0; i<100; i++) {
+//        Student* student = [self addRandomStudent];
+//
+//        if(arc4random_uniform(1000) < 500){
+//            Car* car = [self addRandomCar];
+//            student.car = car;
+//        }
+//
+//        student.university = university;
+//
+//        NSInteger number = arc4random_uniform(5)+1;
+//        while ([student.courses count]<number) {
+//            Course* course = [courses objectAtIndex:arc4random_uniform(5)];
+//
+//            if(![student.courses containsObject:course]){
+//                [student addCoursesObject:course];
+//            }
+//        }
+//    }
+//    if(![self.persistentContainer.viewContext save:&error]){
 //        NSLog(@"%@",[error localizedDescription]);
 //    }
-    /*
-    [self addRandomStudent];
-    [context save:nil];
-     */
-    
-//    NSError *error = nil;
-//    Student *student1 = [self addRandomStudent];
-//    Car *car1 = [self addRandomCar];
 //
-//    student1.car = car1;
+//    [self printAllObjects];
+    
+//    NSFetchRequest *request = [[NSFetchRequest alloc] init];
+    NSFetchRequest *request = [self.persistentContainer.managedObjectModel fetchRequestTemplateForName:@"FetchStudent"] ;
+//    NSEntityDescription *description = [NSEntityDescription entityForName:@"Course" inManagedObjectContext:context];
 //
-//    if(![context save:&error]){
-//        NSLog(@"%@",[error localizedDescription]);
-//    }
+//    [request setEntity:description];
+//    [request setFetchBatchSize:20];
+//    [request setFetchOffset:10];
+//    [request setFetchLimit:35];
+//    [request setRelationshipKeyPathsForPrefetching:@[@"courses"]];
     
-    [self printAllObjects];
-    
-    NSFetchRequest *request = [[NSFetchRequest alloc] init];
-    NSEntityDescription *description = [NSEntityDescription entityForName:@"Car" inManagedObjectContext:context];
-    
-    [request setEntity:description];
-    
+//    NSSortDescriptor *firstNameDescriptor = [[NSSortDescriptor alloc] initWithKey:@"firstName" ascending:YES];
+//    NSSortDescriptor *lastNameDescriptor = [[NSSortDescriptor alloc] initWithKey:@"lastName" ascending:YES];
+//    [request setSortDescriptors:@[firstNameDescriptor,lastNameDescriptor]];
+//    NSSortDescriptor *nameDescriptor = [[NSSortDescriptor alloc] initWithKey:@"name" ascending:YES];
+//    [request setSortDescriptors:@[nameDescriptor]];
+    NSArray *validNames = @[@"James",@"Marta"];
+//    NSPredicate *predicate = [NSPredicate predicateWithFormat:
+//                              @"score > %f AND score <= 3.5 && courses.@count >= 3 AND firstName IN %@ ", 3.0,validNames];
+//    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"@sum.students.score > %f",96.0];
+//    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"SUBQUERY(students, $student, $student.car. model == %@).@count >= %d",@"Audi",6];
+//    [request setPredicate:predicate];
+
     NSError *requesterror = nil;
     NSArray *resultArray = [context executeFetchRequest:request error:&requesterror];
-    if([resultArray count]>0){
-        Car* car = [resultArray firstObject];
-        
-        [self.persistentContainer.viewContext deleteObject:car];
-        [self.persistentContainer.viewContext save:nil];
-    }
-    [self printAllObjects];
+    
+    //resultArray = [resultArray subarrayWithRange:NSMakeRange(0, 50)];
+    
+    [self printArray:resultArray];
+    
         return YES;
 }
 

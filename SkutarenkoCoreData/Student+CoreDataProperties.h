@@ -2,7 +2,7 @@
 //  Student+CoreDataProperties.h
 //  SkutarenkoCoreData
 //
-//  Created by Nataliya Murauyova on 7/16/18.
+//  Created by Nataliya Murauyova on 7/17/18.
 //  Copyright © 2018 Nataliya Murauyova. All rights reserved.
 //
 //
@@ -24,6 +24,16 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic) double score;
 @property (nullable, nonatomic, retain) Car *car;
 @property (nullable, nonatomic, retain) University *university;
+@property (nullable, nonatomic, retain) NSSet<Course *> *courses;
+
+@end
+
+@interface Student (CoreDataGeneratedAccessors)
+
+- (void)addCoursesObject:(Course *)value;
+- (void)removeCoursesObject:(Course *)value;
+- (void)addCourses:(NSSet<Course *> *)values;
+- (void)removeCourses:(NSSet<Course *> *)values;
 
 @end
 

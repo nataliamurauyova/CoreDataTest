@@ -2,7 +2,7 @@
 //  Student+CoreDataProperties.m
 //  SkutarenkoCoreData
 //
-//  Created by Nataliya Murauyova on 7/16/18.
+//  Created by Nataliya Murauyova on 7/17/18.
 //  Copyright © 2018 Nataliya Murauyova. All rights reserved.
 //
 //
@@ -21,5 +21,6 @@
 @dynamic score;
 @dynamic car;
 @dynamic university;
+@dynamic courses;
 
 @end

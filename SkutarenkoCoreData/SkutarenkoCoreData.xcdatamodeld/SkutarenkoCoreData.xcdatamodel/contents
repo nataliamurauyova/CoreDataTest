@@ -4,23 +4,35 @@
         <attribute name="model" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="owner" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Student" inverseName="car" inverseEntity="Student" syncable="YES"/>
     </entity>
-    <entity name="Object" representedClassName="Object" isAbstract="YES" syncable="YES"/>
+    <entity name="Course" representedClassName="Course" parentEntity="Object" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="students" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Student" inverseName="courses" inverseEntity="Student" syncable="YES"/>
+        <relationship name="university" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="University" inverseName="courses" inverseEntity="University" syncable="YES"/>
+        <fetchedProperty name="bestStudent" optional="YES" syncable="YES">
+            <fetchRequest name="fetchedPropertyFetchRequest" entity="Student" predicateString="score &gt; 3.7"/>
+        </fetchedProperty>
+    </entity>
+    <entity name="Object" representedClassName="Object" syncable="YES"/>
     <entity name="Student" representedClassName="Student" parentEntity="Object" syncable="YES">
         <attribute name="dateOfBirth" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
         <attribute name="firstName" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="lastName" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="score" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
         <relationship name="car" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="Car" inverseName="owner" inverseEntity="Car" syncable="YES"/>
+        <relationship name="courses" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Course" inverseName="students" inverseEntity="Course" syncable="YES"/>
         <relationship name="university" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="University" inverseName="students" inverseEntity="University" syncable="YES"/>
     </entity>
     <entity name="University" representedClassName="University" parentEntity="Object" syncable="YES">
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="courses" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Course" inverseName="university" inverseEntity="Course" syncable="YES"/>
         <relationship name="students" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Student" inverseName="university" inverseEntity="Student" syncable="YES"/>
     </entity>
+    <fetchRequest name="FetchStudent" entity="Student" predicateString="score &gt; 3 AND firstName CONTAINS &quot;er&quot;"/>
     <elements>
-        <element name="Car" positionX="144" positionY="-18" width="128" height="73"/>
+        <element name="Car" positionX="333" positionY="-18" width="128" height="73"/>
         <element name="Object" positionX="34" positionY="-169" width="128" height="43"/>
-        <element name="Student" positionX="-63" positionY="-18" width="128" height="133"/>
-        <element name="University" positionX="115" positionY="128" width="128" height="73"/>
+        <element name="Student" positionX="45" positionY="-31" width="128" height="148"/>
+        <element name="University" positionX="-171" positionY="-0" width="128" height="88"/>
+        <element name="Course" positionX="-56" positionY="234" width="128" height="116"/>
     </elements>
 </model>

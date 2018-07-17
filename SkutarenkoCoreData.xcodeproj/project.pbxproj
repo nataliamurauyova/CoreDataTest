@@ -26,6 +26,8 @@
 		EA8105FA20FCEFFE003CCBA2 /* Object+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = EA8105F420FCEFFE003CCBA2 /* Object+CoreDataProperties.m */; };
 		EA8105FB20FCEFFE003CCBA2 /* University+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = EA8105F620FCEFFE003CCBA2 /* University+CoreDataClass.m */; };
 		EA8105FC20FCEFFE003CCBA2 /* University+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = EA8105F820FCEFFE003CCBA2 /* University+CoreDataProperties.m */; };
+		EAD02A7920FE087000262779 /* Course+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = EAD02A7620FE087000262779 /* Course+CoreDataClass.m */; };
+		EAD02A7A20FE087000262779 /* Course+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = EAD02A7820FE087000262779 /* Course+CoreDataProperties.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +62,10 @@
 		EA8105F620FCEFFE003CCBA2 /* University+CoreDataClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "University+CoreDataClass.m"; sourceTree = "<group>"; };
 		EA8105F720FCEFFE003CCBA2 /* University+CoreDataProperties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "University+CoreDataProperties.h"; sourceTree = "<group>"; };
 		EA8105F820FCEFFE003CCBA2 /* University+CoreDataProperties.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "University+CoreDataProperties.m"; sourceTree = "<group>"; };
+		EAD02A7520FE087000262779 /* Course+CoreDataClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Course+CoreDataClass.h"; sourceTree = "<group>"; };
+		EAD02A7620FE087000262779 /* Course+CoreDataClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Course+CoreDataClass.m"; sourceTree = "<group>"; };
+		EAD02A7720FE087000262779 /* Course+CoreDataProperties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Course+CoreDataProperties.h"; sourceTree = "<group>"; };
+		EAD02A7820FE087000262779 /* Course+CoreDataProperties.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Course+CoreDataProperties.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,22 +103,26 @@
 		EA81058720FC817B003CCBA2 /* SkutarenkoCoreData */ = {
 			isa = PBXGroup;
 			children = (
+				EAD02A7520FE087000262779 /* Course+CoreDataClass.h */,
+				EAD02A7620FE087000262779 /* Course+CoreDataClass.m */,
+				EAD02A7720FE087000262779 /* Course+CoreDataProperties.h */,
+				EAD02A7820FE087000262779 /* Course+CoreDataProperties.m */,
+				EA8105F720FCEFFE003CCBA2 /* University+CoreDataProperties.h */,
+				EA8105F820FCEFFE003CCBA2 /* University+CoreDataProperties.m */,
+				EA8105B620FC9E63003CCBA2 /* Student+CoreDataProperties.h */,
+				EA8105B720FC9E63003CCBA2 /* Student+CoreDataProperties.m */,
 				EA8105F120FCEFFE003CCBA2 /* Object+CoreDataClass.h */,
 				EA8105F220FCEFFE003CCBA2 /* Object+CoreDataClass.m */,
 				EA8105F320FCEFFE003CCBA2 /* Object+CoreDataProperties.h */,
 				EA8105F420FCEFFE003CCBA2 /* Object+CoreDataProperties.m */,
 				EA8105F520FCEFFE003CCBA2 /* University+CoreDataClass.h */,
 				EA8105F620FCEFFE003CCBA2 /* University+CoreDataClass.m */,
-				EA8105F720FCEFFE003CCBA2 /* University+CoreDataProperties.h */,
-				EA8105F820FCEFFE003CCBA2 /* University+CoreDataProperties.m */,
 				EA8105C020FCC750003CCBA2 /* Car+CoreDataClass.h */,
 				EA8105C120FCC750003CCBA2 /* Car+CoreDataClass.m */,
 				EA8105C220FCC750003CCBA2 /* Car+CoreDataProperties.h */,
 				EA8105C320FCC750003CCBA2 /* Car+CoreDataProperties.m */,
 				EA8105B420FC9E63003CCBA2 /* Student+CoreDataClass.h */,
 				EA8105B520FC9E63003CCBA2 /* Student+CoreDataClass.m */,
-				EA8105B620FC9E63003CCBA2 /* Student+CoreDataProperties.h */,
-				EA8105B720FC9E63003CCBA2 /* Student+CoreDataProperties.m */,
 				EA81058820FC817B003CCBA2 /* AppDelegate.h */,
 				EA81058920FC817B003CCBA2 /* AppDelegate.m */,
 				EA81058B20FC817B003CCBA2 /* ViewController.h */,
@@ -218,7 +228,9 @@
 				EA8105FC20FCEFFE003CCBA2 /* University+CoreDataProperties.m in Sources */,
 				EA8105FB20FCEFFE003CCBA2 /* University+CoreDataClass.m in Sources */,
 				EA81059B20FC817D003CCBA2 /* main.m in Sources */,
+				EAD02A7920FE087000262779 /* Course+CoreDataClass.m in Sources */,
 				EA8105B820FC9E63003CCBA2 /* Student+CoreDataClass.m in Sources */,
+				EAD02A7A20FE087000262779 /* Course+CoreDataProperties.m in Sources */,
 				EA81058A20FC817B003CCBA2 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
